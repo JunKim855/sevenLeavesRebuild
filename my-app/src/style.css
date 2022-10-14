@@ -1,0 +1,36 @@
+
+/* Caption absolute alignment */
+.main-caption {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  transform: translate(-50%,-50%);
+  font-size: 15px;
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* For dimmed photo effect */
+.dimmed {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+.dimmed:hover {
+  filter: brightness(25%);
+  transition: 0.5s;
+}
+
+/* Middle quote */
+.quote {
+  font-size: 40px;
+  font-family: "Times New Roman";
+  padding: 20px 100px;
+}
+
+
