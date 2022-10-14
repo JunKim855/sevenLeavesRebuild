@@ -11,7 +11,7 @@ import Artisan from './images/artisan.jpeg';
 import MobileApp from './images/mobile_app.png';
 import Responsibility from './images/responsibility.jpeg';
 import { Container, Navbar, Nav, NavDropdown, Image, Row, Col, Button, Card } from 'react-bootstrap';
-import { Search } from 'react-bootstrap-icons';
+import { Search, Facebook, Instagram, Twitter } from 'react-bootstrap-icons';
 
 const NavBar = () => (
     <Navbar className="sticky-top bg-white justify-content-center">
@@ -163,6 +163,22 @@ const News = () => (
   </>
 )
 
+const Footer = () => (
+  <Container className="pb-5">
+    <hr className="text-muted" />
+    <hr className="text-muted" />
+    <span>7 Leaves Cafe, All Rights Reserved. Coffee Tea Goodness | <span className="text-danger">Home</span> | <span className="text-danger">Accessibility Statement</span> | <span className="text-danger">Privacy Policy</span></span><br />
+    <span>© 2011-2022.</span>
+    <span id="social-media">
+      <span className="m-3">Connect with us:</span>
+      <Facebook />&nbsp;&nbsp;
+      <Instagram />&nbsp;&nbsp;
+      <Twitter />&nbsp;&nbsp;
+    </span>
+  </Container>
+);
+
+
 const SevenLeaves = () => (
   <Container>
     <NavBar />
@@ -170,6 +186,7 @@ const SevenLeaves = () => (
     <MiddlePhotos />
     <Mission />
     <News />
+    <Footer />
   </Container>
 );
 
